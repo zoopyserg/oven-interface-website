@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Скачать - Интерфейс Умная Печь</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i">
+    <link rel="stylesheet" href="assets/css/untitled.css">
+</head>
+
+<body style="background: linear-gradient(rgba(47, 23, 15, 0.65), rgba(47, 23, 15, 0.65)), url('assets/img/bg.jpg');">
+    <h1 class="text-center text-white d-none d-lg-block site-heading"><span class="text-primary site-heading-upper mb-3">Превращение промышленной печи в умную</span><span class="site-heading-lower">Интерфейс "Умная печь"</span></h1>
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark py-lg-4" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand text-uppercase d-lg-none text-expanded" href="#">Розумна Пічка</a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navbarResponsive"><span class="visually-hidden">Навигация</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">О нас</a></li>
+                    <li class="nav-item"><a class="nav-link" href="products.html">Продукт</a></li>
+                    <li class="nav-item"><a class="nav-link" href="download.html">Скачать</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Контакты</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section class="page-section cta">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <div class="text-center cta-inner rounded">
+                        <h2 class="section-heading mb-5"><span class="section-heading-upper">Интерфейс "Умная Печь"</span><span class="section-heading-lower">Скачать</span></h2>
+                        <ul class="list-unstyled text-start mx-auto list-hours mb-5">
+                            <li class="d-flex list-unstyled-item list-hours-item">для Windows 10<span class="ms-auto"><a href="https://github.com/zoopyserg/oven-interface-website/raw/main/Oven%20Thermoregulator.zip">Скачать</a></span></li>
+                            <li class="d-flex list-unstyled-item list-hours-item">для Linux<span class="ms-auto">в разработке</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="page-section">
+        <div class="container">
+            <div class="product-item">
+                <div class="d-flex product-item-title">
+                    <div class="d-flex ms-auto bg-faded p-5 rounded">
+                        <h2 class="section-heading mb-0"><span class="section-heading-upper">Простая Схема</span><span class="section-heading-lower">ПОДКЛЮЧЕНИЯ<br></span></h2>
+                    </div>
+                </div><img class="img-fluid d-flex mx-auto product-item-img mb-3 mb-lg-0 rounded" src="assets/img/Scheme.png">
+                <div class="bg-faded p-5 rounded">
+                    <p class="mb-0">Подключение занимает 5 минут:</p>
+                    <ul>
+                        <li>Arduino включить в USB</li>
+                        <li>Модуль реле подключить в USB (вытащив из него джампер)</li>
+                        <li>Подать 5V с Ардуино на плюсовую шину</li>
+                        <li>Подать GND с Ардуино на минусовую шину</li>
+                        <li>Присоединить пены Ардуино (с 3 по 10) на модуле Input в реле (порядок важен, настройки которое реле за что отвечает будут в интерфейсе).</li>
+                        <li>Присоединить 5V с шины в VCC на реле модули.</li>
+                        <li>Присоединить GND с шины в GND на реле модули.</li>
+                    </ul>
+                    <p class="mb-0">Подключение термодатчика (на примере 3-проводной PT100, который уже есть в большинстве печей):</p>
+                    <ul>
+                        <li>GND термодатчика в GND шину</li>
+                        <li>Первый сигнальный провод (любой из двух которые остались) в аналоговый порт Ардуино (любой: А0-А5 - канал будет выбираться в Интерфейсные)</li>
+                        <li>Второй сигнальный провод через резистор подключить к 5V шины.</li>
+                    </ul>
+                    <p class="mb-0">После этого остается воткнуть через выбрано в Интерфейсные реле нагреватель, и все.</p>
+                    <p class="mb-0">Термодатчик подавать температуру в интерфейс, а интерфейс будет поддерживать этим нагревателем нужную температуру.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center footer text-faded py-5">
+        <div class="container">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="../en/index.html">English</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../uk/index.html">Українська</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ru/index.html">Русский</a>
+                </li>
+            </ul>
+            <p class="m-0 small">Copyright Интерфейс "Умная Печь" 2021</p>
+        </div>
+    </footer>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/current-day.js"></script>
+</body>
+
+</html>
